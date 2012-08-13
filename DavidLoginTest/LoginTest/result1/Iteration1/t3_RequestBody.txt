@@ -1,0 +1,2 @@
+"{"client_id":"fedfbce0cc7b4235a509168096e94610","device_pin":"win32_client","device_port":"100"
+"","device_type":"WINDOWS_DESKTOP"}"
