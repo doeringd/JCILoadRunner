@@ -1,8 +1,16 @@
 #include "vts2.h"
 #include "as_web.h"
+#include "Ptt_MySQL.h"
 
 vuser_init()
-{/*
+{
+	lr_load_dll ("libmysql.dll");
+	#define MYSQLSERVER "127.0.0.1"
+	#define MYSQLUSERNAME "root"
+	#define MYSQLPASSWORD "root"
+	#define MYSQLDB "loadrunner_db"
+	#define MYSQLPORT "3306"
+	/*
 	// TABLE
 	PVCI pvci = 0;
           int rc = 0;

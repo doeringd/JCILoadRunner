@@ -1,0 +1,12 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+ContentType=text/html
+StepName=Custom Request: post_to_http_jms_provider
+Total=1
+FileName1=t1.html
+RequestHeaderFile=t1_RequestHeader.txt
+ResponseHeaderFile=t1_ResponseHeader.txt
+RequestBodyFile=t1_RequestBody.txt
+URL1=http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application/clientlogin
+[AdditionalInfo]
+IsIgnorable=1

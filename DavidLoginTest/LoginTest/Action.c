@@ -37,7 +37,8 @@ Action()
 					  "\"date\":\"08\/10\/2012\",\"employee\":\"CMALANS\",\"end\":\"11:38:11\",\"otherUnion\":\"\","
 					  "\"payComments\":\"\",\"project\":\"Regular\",\"reportedHours\":\"1\",\"shift\":\"\","
 					  "\"sourceId\":\"9b05e56dc0a94b93b4f6708658bd347d_113815008096031.84\",\"start\":\"10:38:11\"}}}";*/
-	//field keyValue = { .key = "source_name", .value = "TimeEntry" };
+	/*field[] keyValue = { .key = "source_name", .value = "TimeEntry" },
+					   { .key = "client_id", .value = "123"};*/
 
 	
 	
@@ -47,14 +48,14 @@ Action()
 	//QueryAction(url, session, client, "Employee");	
 	//QueryAction(url, session, client, "Mileage");	
 	//QueryAction(url, session, client, "State");	
-	activityId = QueryAction(url, session, client, "TimeEntry");
+	//activityId = QueryAction(url, session, client, "TimeEntry");
 	//lr_message(client); 
 	//QueryAction(url, session, client, "SiteNote");
 	//QueryAction(url, session, client, "LookupValue");
 // ========= Create ==========
-	sprintf(sourceId, "%s_1", client);
-	sprintf(json, "{\"source_name\":\"TimeEntry\",\"client_id\":\"%s\",\"create\":{\"%s\":{\"activityId\":\"%s\",\"date\":\"08\\/10\\/2012\",\"employee\":\"%s\",\"end\":\"11:38:11\",\"otherUnion\":\"\",\"payComments\":\"\",\"project\":\"Regular\",\"reportedHours\":\"1\",\"shift\":\"\",\"sourceId\":\"%s\",\"start\":\"10:38:11\"}}}", client, sourceId, activityId, user, sourceId);
-	lr_message(json);
+	//sprintf(sourceId, "%s_1", client);
+	//sprintf(json, "{\"source_name\":\"TimeEntry\",\"client_id\":\"%s\",\"create\":{\"%s\":{\"activityId\":\"%s\",\"date\":\"08\\/10\\/2012\",\"employee\":\"%s\",\"end\":\"11:38:11\",\"otherUnion\":\"\",\"payComments\":\"\",\"project\":\"Regular\",\"reportedHours\":\"1\",\"shift\":\"\",\"sourceId\":\"%s\",\"start\":\"10:38:11\"}}}", client, sourceId, activityId, user, sourceId);
+	//lr_message(json);
 	//lr_message(sourceId);
 	//Create(url, session, json);
 	//QueryAction(url, session, client, "TimeEntry");

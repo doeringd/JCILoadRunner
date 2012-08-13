@@ -10,7 +10,7 @@ BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=Action
+LastActiveAction=Login
 CorrInfoReportDir=result1
 LastResultDir=result1
 DevelopTool=Vugen
@@ -27,6 +27,7 @@ Order=""
 vuser_init=vuser_init.c
 Action=Action.c
 Login=Login.c
+Sync=Sync.c
 vuser_end=vuser_end.c
 [ProtocolsVersion]
 QTWeb=11.0.0.0
@@ -47,26 +48,31 @@ Default Profile=default.usp
 21=0
 CurrentState=20
 VuserStateHistory= 0 65536 65552
-LastReplayStatus=1
+LastReplayStatus=2
+LastReplayErrorID1=-26612
+LastReplayErrorMsg1=functions.h(34): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application/clientlogin"  	[MsgId: MERR-26612]
 [ExtraFiles]
 globals.h=
 [Recorded Actions]
 vuser_init=0
 Action=0
 Login=0
+Sync=0
 vuser_end=0
 functions.h=0
 [Replayed Actions]
 vuser_init=1
 Action=1
 Login=1
+Sync=1
 vuser_end=1
 functions.h=1
 [Modified Actions]
 vuser_init=1
 Action=1
 Login=1
+Sync=1
 vuser_end=1
-functions.h=0
+functions.h=1
 [ManuallyExtraFiles]
 functions.h=

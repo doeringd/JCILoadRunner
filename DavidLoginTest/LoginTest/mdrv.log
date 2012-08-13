@@ -1,4 +1,4 @@
-Virtual User Script started at : 2012-08-13 11:36:59
+Virtual User Script started at : 2012-08-13 17:32:53
 Starting action vuser_init.
 Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 8859 (Aug 18 2010 20:14:31)  	[MsgId: MMSG-27143]
 Run Mode: HTML  	[MsgId: MMSG-26000]
@@ -7,49 +7,15 @@ Ending action vuser_init.
 Running Vuser...
 Starting iteration 1.
 Starting action Login.
-functions.h(30): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
-functions.h(30): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
-functions.h(32): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
-functions.h(36): Notify: Transaction "rest_put" started.
-functions.h(38): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-functions.h(39): web_custom_request("post_to_http_jms_provider") was successful, 0 body bytes, 1036 header bytes  	[MsgId: MMSG-26386]
-functions.h(52): Notify: Transaction "rest_put" ended with "Pass" status (Duration: 3.2491 Wasted Time: 2.4378).
-functions.h(75): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
-functions.h(75): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
-functions.h(76): web_add_header("Cookie") was successful  	[MsgId: MMSG-26392]
-functions.h(79): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
-functions.h(83): Notify: Transaction "rest_put" started.
-functions.h(85): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-functions.h(88): web_custom_request("post_to_http_jms_provider") was successful, 59 body bytes, 1049 header bytes  	[MsgId: MMSG-26386]
-functions.h(101): Notify: Transaction "rest_put" ended with "Pass" status (Duration: 0.8199 Wasted Time: 0.0167).
-functions.h(128): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
-functions.h(128): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
-functions.h(129): web_add_header("Cookie") was successful  	[MsgId: MMSG-26392]
-functions.h(132): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
-functions.h(136): Notify: Transaction "rest_put" started.
-functions.h(140): web_custom_request("post_to_http_jms_provider") was successful, 0 body bytes, 1039 header bytes  	[MsgId: MMSG-26386]
-functions.h(156): Notify: Transaction "rest_put" ended with "Pass" status (Duration: 0.1126 Wasted Time: 0.0041).
+functions.h(25): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
+functions.h(25): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
+functions.h(27): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+functions.h(31): Notify: Transaction "rest_put" started.
+functions.h(33): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
+functions.h(34): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application/clientlogin"  	[MsgId: MERR-26612]
+functions.h(34): web_custom_request("post_to_http_jms_provider") highest severity level was "ERROR", 27 body bytes, 900 header bytes  	[MsgId: MMSG-26388]
+functions.h(34): Notify: Transaction "rest_put" ended with "Fail" status (Duration: 1.2577 Wasted Time: 0.2968).
 Ending action Login.
-Starting action Action.
-http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application?client_id=fedfbce0cc7b4235a509168096e94610&p_size=2000&version=3&source_name=TimeEntry
-functions.h(176): Warning -26593: The header being added may cause unpredictable results when applied to all ensuing URLs. It is added anyway  	[MsgId: MWAR-26593]
-functions.h(176): web_add_header("Content-Type") highest severity level was "warning"  	[MsgId: MMSG-26391]
-functions.h(177): web_add_header("Cookie") was successful  	[MsgId: MMSG-26392]
-Session cookie: 
-functions.h(180): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
-functions.h(183): Notify: Transaction "rest_put" started.
-functions.h(185): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-functions.h(186): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-functions.h(189): web_custom_request("post_to_http_jms_provider") was successful, 3698 body bytes, 1038 header bytes  	[MsgId: MMSG-26386]
-Returned token is: 114089832776633
-functions.h(201): Notify: Transaction "rest_put" ended with "Pass" status (Duration: 1.2600 Wasted Time: 0.0173).
-functions.h(210): Registering web_reg_save_param was successful  	[MsgId: MMSG-26390]
-functions.h(211): Notify: Transaction "rest_put" started.
-functions.h(212): web_custom_request("post_to_http_jms_provider") was successful, 82 body bytes, 1036 header bytes  	[MsgId: MMSG-26386]
-functions.h(220): Notify: Transaction "rest_put" ended with "Pass" status (Duration: 0.1721 Wasted Time: 0.0040).
-Result from TimeEntry Query: [{"version":3},{"token":""},{"count":0},{"progress_count":0},{"total_count":9},{}]
-{"source_name":"TimeEntry","client_id":"fedfbce0cc7b4235a509168096e94610","create":{"fedfbce0cc7b4235a509168096e94610_1":{"activityId":"1-2GA3WV7","date":"08\/10\/2012","employee":"CMALANS","end":"11:38:11","otherUnion":"","payComments":"","project":"Regular","reportedHours":"1","shift":"","sourceId":"fedfbce0cc7b4235a509168096e94610_1","start":"10:38:11"}}}
-Ending action Action.
 Ending iteration 1.
 Ending Vuser...
 Starting action vuser_end.
