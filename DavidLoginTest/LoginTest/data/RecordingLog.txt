@@ -1,0 +1,57 @@
+[Network Analyzer (2738:27cc)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2738:27cc)] Load Network Traffic Analyzers:
+[Network Analyzer (2738:27cc)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (2738:27cc)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (2738:27cc)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (2738:27cc)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (2738:27cc)]     Analyzer Module: QTWeb (value=)
+[Network Analyzer (2738:27cc)]     Analyzer Module: local_server (value=)
+[Network Analyzer (2738:27cc)] ------------------------------------------------------------------------------------------
+[Network Analyzer (2738:23a0)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:27cc)] Establish Listener @ 127.0.0.1:7832
+[Network Analyzer (2738:26a0)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:26a0)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid=  2)  PROXIED!
+[Network Analyzer (2738:27cc)] Accept Connection : Service @ 127.0.0.1:7832  ,  Remote Client @ 0.0.0.0:0
+[Web Request      (2738:23a0)] "GET /system/uicreated"   
+[Network Analyzer (2738:23a0)]   (Sid:  2) Client -> Server : 103 bytes (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  3) Server -> Client : 103 bytes 
+[Network Analyzer (2738:23a0)]   (Sid:  3) Client -> Server : 237 bytes 
+[Network Analyzer (2738:23a0)]   (Sid:  2) Server -> Client : 237 bytes  (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  3) Connection Terminated (by Client)
+[Network Analyzer (2738:23a0)]   (Sid:  2) Connection Terminated (by Client)
+[Network Analyzer (2738:26a0)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:26a0)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid=  4)  PROXIED!
+[Network Analyzer (2738:27cc)] Accept Connection : Service @ 127.0.0.1:7832  ,  Remote Client @ 0.0.0.0:0
+[Web Request      (2738:23a0)] "GET /system/activateapp"   
+[Network Analyzer (2738:23a0)]   (Sid:  4) Client -> Server : 105 bytes (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  5) Server -> Client : 105 bytes 
+[Network Analyzer (2738:23a0)]   (Sid:  5) Client -> Server : 237 bytes 
+[Network Analyzer (2738:23a0)]   (Sid:  4) Server -> Client : 237 bytes  (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  5) Connection Terminated (by Client)
+[Network Analyzer (2738:23a0)]   (Sid:  4) Connection Terminated (by Client)
+[Network Analyzer (2738:2470)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:2470)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid=  6)  PROXIED!
+[Network Analyzer (2738:2350)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:27cc)] Accept Connection : Service @ 127.0.0.1:7832  ,  Remote Client @ 0.0.0.0:0
+[Web Request      (2738:23a0)] "POST /system/loadallsyncsources"   
+[Network Analyzer (2738:23a0)]   (Sid:  6) Client -> Server : 157 bytes (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  7) Server -> Client : 157 bytes 
+[Network Analyzer (2738:2350)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid=  8)  PROXIED!
+[Net An. Error    (2738:23a0)] Shutting Down Stray Connections (Sockid: 2408)!
+[Network Analyzer (2738:2350)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:2350)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid=  9)  PROXIED!
+[Network Analyzer (2738:23a0)]   (Sid:  7) Client -> Server : 237 bytes 
+[Network Analyzer (2738:23a0)]   (Sid:  6) Server -> Client : 237 bytes  (Service=HTTP)
+[Network Analyzer (2738:23a0)]   (Sid:  7) Connection Terminated (by Client)
+[Network Analyzer (2738:23a0)]   (Sid:  6) Connection Terminated (by Client)
+[Web Request      (2738:23a0)] "GET /app/Settings/initialize_app"   
+[Network Analyzer (2738:23a0)]   (Sid:  9) Client -> Server : 327 bytes (Service=HTTP)
+[Network Analyzer (2738:2470)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:2470)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid= 10)  PROXIED!
+[Network Analyzer (2738:27cc)] Accept Connection : Service @ 127.0.0.1:7832  ,  Remote Client @ 0.0.0.0:0
+[Web Request      (2738:23a0)] "POST /app/Settings/sync_notify"   
+[Network Analyzer (2738:23a0)]   (Sid: 10) Client -> Server : 283 bytes (Service=HTTP)
+[Network Analyzer (2738:1df4)] Address lookup for DDOERING7DAL = 192.168.100.104
+[Network Analyzer (2738:1df4)] Request Connection: Remote Server @ 127.0.0.1:7832   (Service=)  (Sid= 12)  PROXIED!
+[Web Request      (2738:23a0)] "GET /system/deactivateapp"   
+[Network Analyzer (2738:23a0)]   (Sid: 12) Client -> Server : 107 bytes (Service=HTTP)

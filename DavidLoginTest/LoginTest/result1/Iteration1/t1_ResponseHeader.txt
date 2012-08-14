@@ -1,14 +1,14 @@
-HTTP/1.1 500 Internal Server Error
+HTTP/1.1 200 OK
 Server: nginx/1.3.0
-Date: Mon, 13 Aug 2012 22:33:03 GMT
+Date: Tue, 14 Aug 2012 21:34:43 GMT
 Content-Type: text/html;charset=utf-8
-Content-Length: 27
-Connection: close
+Content-Length: 0
+Connection: keep-alive
 X-Frame-Options: sameorigin
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache
 pragma: no-cache
-Warning: Use of the POST /application/clientlogin is deprecated. Use Rhoconnect API v1 instead.
-Set-Cookie: rhoconnect_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiJFNzVlNGYxNjE3YzQ5OTU2OGVjZmI4%0AZjA1MmM3MDE3MDhlZDQ4MmM1OTU5MGEzOWJmN2JkN2UwNTUyYjQ5NTZkNg%3D%3D%0A--87489d1ea0af525567acd4614f806b4f3b63ba58; path=/; expires=Tue, 13-Aug-2013 22:33:03 GMT; HttpOnly
-Set-Cookie: rhoconnect_session=BAh7BkkiD3Nlc3Npb25faWQGOgZFRiJFNzVlNGYxNjE3YzQ5OTU2OGVjZmI4%0AZjA1MmM3MDE3MDhlZDQ4MmM1OTU5MGEzOWJmN2JkN2UwNTUyYjQ5NTZkNg%3D%3D%0A--87489d1ea0af525567acd4614f806b4f3b63ba58; path=/; expires=Tue, 13-Aug-2013 22:33:03 GMT; HttpOnly
+Warning: Use of the POST /application/clientregister is deprecated. Use Rhoconnect API v1 instead.
+Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/; expires=Wed, 14-Aug-2013 21:34:43 GMT; HttpOnly
+Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/; expires=Wed, 14-Aug-2013 21:34:43 GMT; HttpOnly
 

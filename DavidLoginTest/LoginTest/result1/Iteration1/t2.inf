@@ -7,6 +7,6 @@ FileName1=t2.UNK
 RequestHeaderFile=t2_RequestHeader.txt
 ResponseHeaderFile=t2_ResponseHeader.txt
 RequestBodyFile=t2_RequestBody.txt
-URL1=http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application/clientcreate
+URL1=http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application?client_id=dab500ae318b445abd77a688af2eb25d&p_size=2000&version=3&source_name=AppInfo
 [AdditionalInfo]
 IsIgnorable=1

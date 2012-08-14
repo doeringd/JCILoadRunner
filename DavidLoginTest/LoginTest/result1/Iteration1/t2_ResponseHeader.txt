@@ -1,14 +1,14 @@
 HTTP/1.1 200 OK
 Server: nginx/1.3.0
-Date: Mon, 13 Aug 2012 16:37:11 GMT
+Date: Tue, 14 Aug 2012 21:34:44 GMT
 Content-Type: application/json;charset=utf-8
-Content-Length: 59
+Content-Length: 82
 Connection: keep-alive
 X-Frame-Options: sameorigin
 X-XSS-Protection: 1; mode=block
 Cache-Control: no-cache
 pragma: no-cache
-Warning: Use of the GET /application/clientcreate is deprecated. Use Rhoconnect API v1 instead.
-Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFNzBmZTM5NDhmYzY1MjcyNzkzM2Fh%0ANzc2OTc5NTk3MzE5YjI5NjA3ZjJlNGFkNmFiNTI2ZjY4NWYwNTA3ZGY3MUki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--0d73d42cd9e048034316250844dc941bcfe6650a; path=/; expires=Tue, 13-Aug-2013 16:37:11 GMT; HttpOnly
-Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFNzBmZTM5NDhmYzY1MjcyNzkzM2Fh%0ANzc2OTc5NTk3MzE5YjI5NjA3ZjJlNGFkNmFiNTI2ZjY4NWYwNTA3ZGY3MUki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--0d73d42cd9e048034316250844dc941bcfe6650a; path=/; expires=Tue, 13-Aug-2013 16:37:11 GMT; HttpOnly
+Warning: Use of the GET /application is deprecated. Use Rhoconnect API v1 instead.
+Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/; expires=Wed, 14-Aug-2013 21:34:44 GMT; HttpOnly
+Set-Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/; expires=Wed, 14-Aug-2013 21:34:44 GMT; HttpOnly
 

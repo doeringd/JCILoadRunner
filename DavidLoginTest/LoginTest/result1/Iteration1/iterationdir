@@ -1,5 +1,9 @@
+[Sync]
+SnapshotIndex=I1_Sync
 [vuser_init]
 SnapshotIndex=I1_vuser_init
+[Action]
+SnapshotIndex=I1_Action
 [Login]
 SnapshotIndex=I1_Login
 [vuser_end]

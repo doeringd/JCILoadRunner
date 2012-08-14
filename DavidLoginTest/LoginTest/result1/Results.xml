@@ -94,7 +94,7 @@
 <Res><![CDATA[result1]]></Res>
 <Action rID="T2">
 <AName><![CDATA[vuser_init]]></AName>
-<Summary sTime="8/13/2012 - 17:32:53" eTime="8/13/2012 - 17:32:53" passed="0" failed="0" warnings="0" ></Summary>
+<Summary sTime="8/14/2012 - 16:34:30" eTime="8/14/2012 - 16:34:30" passed="0" failed="0" warnings="0" ></Summary>
 <NodeArgs eType="StartAction" icon="2" nRep="5" >
 <Disp><![CDATA[vuser_init Summary]]></Disp>
 </NodeArgs>
@@ -105,64 +105,220 @@
 <Step rID="T5">
 <Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
 <Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Content-Type: application/json; charset=utf-8</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[8/13/2012 - 17:32:53]]></Time>
+<Time><![CDATA[8/14/2012 - 16:34:31]]></Time>
 <NodeArgs eType="General" icon="4" nRep="9" >
 <Disp><![CDATA[Service: Add Header]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T6">
-<Obj plainTxt="False" ><![CDATA[Service: Set Max Html Param Len]]></Obj>
-<Details plainTxt="False" ><![CDATA[<CENTER>Maximum length of a HTML string that can be retrieved and saved set to <STRONG><FONT COLOR=#00AF00>2000</FONT></STRONG> characters</CENTER>]]></Details>
-<Time><![CDATA[8/13/2012 - 17:32:53]]></Time>
-<NodeArgs eType="General" icon="5" nRep="10" >
-<Disp><![CDATA[Service: Set Max Html Param Len]]></Disp>
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/;</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:31]]></Time>
+<NodeArgs eType="General" icon="4" nRep="10" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T7">
-<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
-<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>sessionCookie</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=Set-Cookie: </FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB= expires</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[8/13/2012 - 17:32:53]]></Time>
-<NodeArgs eType="General" icon="6" nRep="11" >
-<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+<Obj plainTxt="False" ><![CDATA[Service: Set Max Html Param Len]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Maximum length of a HTML string that can be retrieved and saved set to <STRONG><FONT COLOR=#00AF00>1036</FONT></STRONG> characters</CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:31]]></Time>
+<NodeArgs eType="General" icon="5" nRep="11" >
+<Disp><![CDATA[Service: Set Max Html Param Len]]></Disp>
 </NodeArgs>
 </Step>
 <Step rID="T8">
 <Obj plainTxt="False" ><![CDATA[Custom Request: post_to_http_jms_provider]]></Obj>
-<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#FF0031>Step failed</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[8/13/2012 - 17:32:54]]></Time>
-<NodeArgs eType="General" icon="7" nRep="12" status="Failed" >
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Resource loaded successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="6" nRep="12" status="Passed" >
 <Disp><![CDATA[Custom Request: post_to_http_jms_provider]]></Disp>
-<BtmPane vType="HTMLSNSH">
-<Path><![CDATA[\Iteration1\t1.inf]]></Path>
-</BtmPane>
 </NodeArgs>
 </Step>
-<Step rID="T9">
-<Obj plainTxt="False" ><![CDATA[Script Aborted!]]></Obj>
-<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#FF0031>Failed</FONT></STRONG></CENTER>]]></Details>
-<Time><![CDATA[8/13/2012 - 17:32:54]]></Time>
-<NodeArgs eType="General" icon="1" nRep="13" status="Failed" >
-<Disp><![CDATA[Script Aborted!]]></Disp>
-</NodeArgs>
-</Step>
-<Summary sTime="8/13/2012 - 17:32:53" eTime="8/13/2012 - 17:32:54" passed="0" failed="2" warnings="0" ></Summary>
-<NodeArgs eType="StartAction" icon="2" nRep="8" status="Failed" >
+<Summary sTime="8/14/2012 - 16:34:31" eTime="8/14/2012 - 16:34:32" passed="1" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="8" status="Passed" >
 <Disp><![CDATA[Login Summary]]></Disp>
 </NodeArgs>
 </Action>
-<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Failed" >
+<Action rID="T9">
+<AName><![CDATA[Sync]]></AName>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Content-Type: application/json; charset=utf-8</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="4" nRep="15" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/;</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="4" nRep="16" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[Service: Set Max Html Param Len]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Maximum length of a HTML string that can be retrieved and saved set to <STRONG><FONT COLOR=#00AF00>2000</FONT></STRONG> characters</CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="5" nRep="17" >
+<Disp><![CDATA[Service: Set Max Html Param Len]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=token":"</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="},</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="7" nRep="18" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>result</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB=</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="7" nRep="19" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Custom Request: post_to_http_jms_provider]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="6" nRep="20" status="Passed" >
+<Disp><![CDATA[Custom Request: post_to_http_jms_provider]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t2.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Content-Type: application/json; charset=utf-8</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="4" nRep="21" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/;</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="4" nRep="22" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA[Service: Set Max Html Param Len]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Maximum length of a HTML string that can be retrieved and saved set to <STRONG><FONT COLOR=#00AF00>2000</FONT></STRONG> characters</CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:32]]></Time>
+<NodeArgs eType="General" icon="5" nRep="23" >
+<Disp><![CDATA[Service: Set Max Html Param Len]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=token":"</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="},</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="7" nRep="24" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>result</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB=</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="7" nRep="25" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[Custom Request: post_to_http_jms_provider]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="6" nRep="26" status="Passed" >
+<Disp><![CDATA[Custom Request: post_to_http_jms_provider]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t3.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Content-Type: application/json; charset=utf-8</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="4" nRep="27" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[Service: Add Header]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Add the following header to the next HTTP request :<BR><STRONG><FONT COLOR=#00AF00>Cookie: rhoconnect_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFRiJFYTQyNDk3ZWZhNGU3NzNmMjA1OWJh%0AYWFhZjc0MTFmYmM4YjhhNmM4NGEzYjUzMzRhYjAzNGE0NjI5M2UxZGIyN0ki%0ACmxvZ2luBjsARkkiDENNQUxBTlMGOwBUSSINYXBwX25hbWUGOwBGSSIQYXBw%0AbGljYXRpb24GOwBG%0A--d9ea910baa773ce06fb89c092bc2202bea10dfc1; path=/;</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="4" nRep="28" >
+<Disp><![CDATA[Service: Add Header]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Service: Set Max Html Param Len]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>Maximum length of a HTML string that can be retrieved and saved set to <STRONG><FONT COLOR=#00AF00>2000</FONT></STRONG> characters</CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="5" nRep="29" >
+<Disp><![CDATA[Service: Set Max Html Param Len]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>token</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=token":"</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB="},</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="7" nRep="30" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[Service: Reg Save Param]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER>ParamName =<STRONG><FONT COLOR=#00AF00>result</FONT></STRONG><BR>Left Boundary = <STRONG><FONT COLOR=#00AF00>LB=</FONT></STRONG><BR>Right Boundary = <STRONG><FONT COLOR=#00AF00>RB=</FONT></STRONG><BR>Instance = <STRONG><FONT COLOR=#00AF00></FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="7" nRep="31" >
+<Disp><![CDATA[Service: Reg Save Param]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[Custom Request: post_to_http_jms_provider]]></Obj>
+<Details plainTxt="False" ><![CDATA[<CENTER><STRONG><FONT COLOR=#009A63>Step completed successfully</FONT></STRONG></CENTER>]]></Details>
+<Time><![CDATA[8/14/2012 - 16:34:33]]></Time>
+<NodeArgs eType="General" icon="6" nRep="32" status="Passed" >
+<Disp><![CDATA[Custom Request: post_to_http_jms_provider]]></Disp>
+<BtmPane vType="HTMLSNSH">
+<Path><![CDATA[\Iteration1\t4.inf]]></Path>
+</BtmPane>
+</NodeArgs>
+</Step>
+<Summary sTime="8/14/2012 - 16:34:32" eTime="8/14/2012 - 16:34:33" passed="3" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="14" status="Passed" >
+<Disp><![CDATA[Sync Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Action rID="T28">
+<AName><![CDATA[Action]]></AName>
+<Summary sTime="8/14/2012 - 16:34:33" eTime="8/14/2012 - 16:34:33" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="34" >
+<Disp><![CDATA[Action Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="7" status="Passed" >
 <Disp><![CDATA[LoginTest Iteration 1 (Row 1)]]></Disp>
 </NodeArgs>
 </DIter>
-<Action rID="T10">
+<Action rID="T29">
 <AName><![CDATA[vuser_end]]></AName>
-<Summary sTime="8/13/2012 - 17:32:54" eTime="8/13/2012 - 17:32:54" passed="0" failed="0" warnings="0" ></Summary>
-<NodeArgs eType="StartAction" icon="2" nRep="16" >
+<Summary sTime="8/14/2012 - 16:34:33" eTime="8/14/2012 - 16:34:33" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="2" nRep="37" >
 <Disp><![CDATA[vuser_end Summary]]></Disp>
 </NodeArgs>
 </Action>
-<Summary sTime="8/13/2012 - 17:32:53" eTime="8/13/2012 - 17:32:54" passed="0" failed="2" warnings="0" ></Summary>
-<NodeArgs eType="StartTest" icon="1" nRep="4" status="Failed" >
+<Summary sTime="8/14/2012 - 16:34:30" eTime="8/14/2012 - 16:34:33" passed="4" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="4" status="Passed" >
 <Disp><![CDATA[Test LoginTest Summary]]></Disp>
 </NodeArgs>
 </Doc>

@@ -1,0 +1,13 @@
+[StartRecordingGMT]
+StartRecordingGMT_1=2012/08/14 20:29:39
+StartRecordingIsDst_1=1
+StartRecordingGMT_2=2012/08/14 20:31:33
+StartRecordingIsDst_2=1
+StartRecordingGMT_3=2012/08/14 20:32:10
+StartRecordingIsDst_3=1
+StartRecordingGMT_4=2012/08/14 20:37:43
+StartRecordingIsDst_4=1
+[User-Agent]
+User-Agent=rhodes-wm
+[Security]
+UsingPersistForAuthentication=1

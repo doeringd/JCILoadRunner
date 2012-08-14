@@ -1,4 +1,4 @@
-char* ClientLogin(char* baseUrl, char* userName, char* password)
+/*char* ClientLogin(char* baseUrl, char* userName, char* password)
 {
 	//char *baseUrl = "http://192.168.100.53:9292/application/";
 	//char *userName = "ckitzua";
@@ -47,9 +47,9 @@ char* ClientLogin(char* baseUrl, char* userName, char* password)
 	lr_end_transaction("rest_put", LR_AUTO);
 
 	return sessionCookie;
-}
+}*/
 
-
+/*
 char* ClientCreate(char* baseUrl, char* sessionCookie)
 {
 	//char *baseUrl = "http://192.168.100.53:9292/application/";
@@ -233,7 +233,7 @@ void Create(char* baseUrl, char* sessionCookie, char json[1080])
 	/*sprintf(request_json, "{\"source_name\":\"%s\",\"client_id\":\"%s\",\"create\":{\"%s\":{\"activityId\":\"%s\",\"comments\":\"\",\"date\":\"08\/10\/12\","
 						  "\"%s\":\"%s\",\"product\":\"%s\",\"sourceId\":\"%s\"}}", 
 			activity, clientId, sourceId, activityId, valueId, value, activity, sourceId);*/
-  
+/*  
 	//request_json = lr_eval_string(request_json_base);
 	lr_save_string(json, "REQUEST_JSON_PARAM");
   
@@ -278,7 +278,7 @@ void Update(char* baseUrl, char* sessionCookie, char* client, char* activity, ch
 /*char* jsonParser(field fields[])
 {
 
-}*/
+}*//*
 //============== Activity ==================
 void ActivityAccept(char* baseUrl, char* sessionCookie, char* client, char* activityNumber)
 {
@@ -301,7 +301,7 @@ void ActivityComplete (char* baseUrl, char* sessionCookie, char* client, char* a
 	ActivityUpdate(baseUrl, sessionCookie, client, activityNumber, "Complete");
 }
 // Pass in the status depending on what you change the activity to
-void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* activityNumber, char* status)
+void ActivityUpdate(char* baseUrl, char* sessionCookie, char* clientid, char* activityNumber, char* status)
 {
 	char *param_size = "1036";
 	char json[1080];
@@ -315,7 +315,7 @@ void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* acti
 	//FULL URL
 	//{"source_name":"Activity","client_id":"ddce5418447b4ebcabb2166f932ceefc","update":{"1-2G3DXM2":{"activityNumber":"1-2G3DXM2","activityRead":"","assetId":"","comments":"","customerDescription":"","delayReason":"","end":"08\/07\/2012 10:00:00","enterpriseId":"1-2G3DXM2","explanation":"","isBillable":"N","object":"1-2G3DXM2","plannedServiceTimeAllotment":"10080","plannedStart":"07\/31\/2012 10:00:00","potentialWarranty":"","priority":"","recordVersion":"4","siteContactId":"No Match Row Id","siteId":"","srNumber":"","start":"","status":"In Progress","timeStamp":"08\/14\/2012 01:00:14","type":"On Call"}}}
 	//
-	sprintf(json,"\"source_name\":\"Activity\",\"client_id\":\"%s\",\"update\":{\"%s\":{\"activityNumber\":\"%s\",\"status\":\"%s\"}}", client, activityNumber, activityNumber, status);
+	sprintf(json,"\"source_name\":\"Activity\",\"client_id\":\"%s\",\"update\":{\"%s\":{\"activityNumber\":\"%s\",\"status\":\"%s\"}}", clientid, activityNumber, activityNumber, status);
 	lr_save_string(json, "REQUEST_JSON_PARAM");
 
 	lr_start_transaction("rest_put");
@@ -339,4 +339,5 @@ void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* acti
 	lr_end_transaction("rest_put", LR_AUTO);
 	
 }
+*/
 //============================================

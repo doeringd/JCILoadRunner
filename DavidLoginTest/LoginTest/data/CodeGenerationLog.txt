@@ -1,0 +1,164 @@
+****** Start Log Message ******
+Web Recorder version : 11.0.9375.0 
+Recording Mode: HTML-based script
+Not recording headers
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+Reset context between actions
+Record non-HTML elements in current HTML function
+Protocol Type: Multi-QTWeb
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 11.0.9375.0
+
+****** Request Header For Transaction With Id 94 ******
+GET /system/uicreated HTTP/1.1
+User-Agent: rhodes-wm
+Host: 127.0.0.1:7832
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 94 Ended $$$$$$
+
+****** Response Header For Transaction With Id 94 ******
+HTTP/1.1 200 OK
+Host: 127.0.0.1:7832
+Connection: close
+Content-Length: 0
+Pragma: no-cache
+Cache-Control: no-cache
+Expires: 0
+Date: Tue, 14 Aug 2012 15:37:45 GMT
+Last-Modified: Tue, 14 Aug 2012 15:37:45 GMT
+Etag: "502ab719.0"
+
+
+$$$$$$ Response Header For Transaction With Id 94 Ended $$$$$$
+
+****** Response Body For Transaction With Id 94 ******
+
+$$$$$$ Response Body For Transaction With Id 94 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+The Node has no URL
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 94 ****** (Location Flag : tFlagInsertEnd, Location ID : 94)
+	web_url("uicreated",
+		"URL=http://127.0.0.1:7832/system/uicreated",
+		"Resource=0",
+		"Referer=",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 94 Ended $$$$$$
+
+****** Request Header For Transaction With Id 100 ******
+GET /system/activateapp HTTP/1.1
+User-Agent: rhodes-wm
+Host: 127.0.0.1:7832
+Connection: Keep-Alive
+
+
+$$$$$$ Request Header For Transaction With Id 100 Ended $$$$$$
+
+****** Response Header For Transaction With Id 100 ******
+HTTP/1.1 200 OK
+Host: 127.0.0.1:7832
+Connection: close
+Content-Length: 0
+Pragma: no-cache
+Cache-Control: no-cache
+Expires: 0
+Date: Tue, 14 Aug 2012 15:37:46 GMT
+Last-Modified: Tue, 14 Aug 2012 15:37:46 GMT
+Etag: "502ab71a.0"
+
+
+$$$$$$ Response Header For Transaction With Id 100 Ended $$$$$$
+
+****** Response Body For Transaction With Id 100 ******
+
+$$$$$$ Response Body For Transaction With Id 100 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/system/uicreated
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 100 ****** (Location Flag : tFlagInsertEnd, Location ID : 100)
+	web_url("activateapp",
+		"URL=http://127.0.0.1:7832/system/activateapp",
+		"Resource=0",
+		"Referer=",
+		"Mode=HTML",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 100 Ended $$$$$$
+
+****** Request Header For Transaction With Id 110 ******
+POST /system/loadallsyncsources HTTP/1.1
+User-Agent: rhodes-wm
+Host: 127.0.0.1:7832
+Content-Length: 0
+Connection: Keep-Alive
+Cache-Control: no-cache
+
+
+$$$$$$ Request Header For Transaction With Id 110 Ended $$$$$$
+
+****** Response Header For Transaction With Id 110 ******
+HTTP/1.1 200 OK
+Host: 127.0.0.1:7832
+Connection: close
+Content-Length: 0
+Pragma: no-cache
+Cache-Control: no-cache
+Expires: 0
+Date: Tue, 14 Aug 2012 15:37:46 GMT
+Last-Modified: Tue, 14 Aug 2012 15:37:46 GMT
+Etag: "502ab71a.0"
+
+
+$$$$$$ Response Header For Transaction With Id 110 Ended $$$$$$
+
+****** Response Body For Transaction With Id 110 ******
+
+$$$$$$ Response Body For Transaction With Id 110 Ended $$$$$$
+
+****** Start Log Message ******
+
+Start Frames Hierarchy Tree Dump
+/system/activateapp
+End Frames Hierarchy Tree Dump
+
+$$$$$$ End Log Message $$$$$$
+
+****** Add Event For Transaction With Id 110 ****** (Location Flag : tFlagInsertEnd, Location ID : 110)
+	web_custom_request("loadallsyncsources",
+		"URL=http://127.0.0.1:7832/system/loadallsyncsources",
+		"Method=POST",
+		"Resource=0",
+		"Referer=",
+		"Mode=HTML",
+		"EncType=",
+		LAST);
+
+
+$$$$$$ Add Event For Transaction With Id 110 Ended $$$$$$
+
+Event Matching Error: IN Event left without an OUT event at the end of recording
+Event Matching Error: IN Event left without an OUT event at the end of recording
+Event Matching Error: IN Event left without an OUT event at the end of recording

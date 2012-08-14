@@ -825,6 +825,9 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
 # 1 "c:\\users\\david.doering\\documents\\david's documents\\davidlogintest\\logintest\\\\combined_LoginTest.c" 2
 
 # 1 "globals.h" 1
+
+
+
  
  
 
@@ -1414,31 +1417,21 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
 										 
 										 
 
-
-
-
-
-
-
-
-
-
-# 596 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
-
-
-# 609 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
-
-
-
-
-
-
-
-
-
-
-
-
+  int
+	web_reg_save_param_regexp(
+		 const char * mpszParamName,
+		 ...);							
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
+										 
 
 
 
@@ -1449,12 +1442,38 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
 
 
 
+# 612 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
+
+
+# 625 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
 
 
 
 
 
-# 647 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 663 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
 
  
  
@@ -1501,7 +1520,7 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
 
 
 
-# 715 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
+# 731 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/as_web.h"
 
 
 
@@ -1716,7 +1735,7 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
  
 
 
-# 4 "globals.h" 2
+# 7 "globals.h" 2
 
 # 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/lrw_custom_body.h" 1
  
@@ -1725,9 +1744,42 @@ int lr_convert_string_encoding(char *sourceString, char *fromEncoding, char *toE
 
 
 
-# 5 "globals.h" 2
+# 8 "globals.h" 2
 
-# 1 "functions.h" 1
+# 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/Rho.h" 1
+void init()
+{
+	ci_load_dll(ci_this_context,("libmysql.dll"));
+	
+	
+	
+	
+	
+}
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
 char* ClientLogin(char* baseUrl, char* userName, char* password)
 {
 	 
@@ -2031,7 +2083,7 @@ void ActivityComplete (char* baseUrl, char* sessionCookie, char* client, char* a
 	ActivityUpdate(baseUrl, sessionCookie, client, activityNumber, "Complete");
 }
  
-void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* activityNumber, char* status)
+void ActivityUpdate(char* baseUrl, char* sessionCookie, char* clientid, char* activityNumber, char* status)
 {
 	char *param_size = "1036";
 	char json[1080];
@@ -2045,7 +2097,7 @@ void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* acti
 	 
 	 
 	 
-	sprintf(json,"\"source_name\":\"Activity\",\"client_id\":\"%s\",\"update\":{\"%s\":{\"activityNumber\":\"%s\",\"status\":\"%s\"}}", client, activityNumber, activityNumber, status);
+	sprintf(json,"\"source_name\":\"Activity\",\"client_id\":\"%s\",\"update\":{\"%s\":{\"activityNumber\":\"%s\",\"status\":\"%s\"}}", clientid, activityNumber, activityNumber, status);
 	lr_save_string(json, "REQUEST_JSON_PARAM");
 
 	lr_start_transaction("rest_put");
@@ -2070,155 +2122,21 @@ void ActivityUpdate(char* baseUrl, char* sessionCookie, char* client, char* acti
 	
 }
  
-# 6 "globals.h" 2
-
+# 9 "globals.h" 2
 
 
  
  
+char* user;
+char* password;
 char* session;
-char* client;
- 
- 
+char* clientid;
 char* url = "http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application";
 
- 
+
 # 2 "c:\\users\\david.doering\\documents\\david's documents\\davidlogintest\\logintest\\\\combined_LoginTest.c" 2
 
 # 1 "vuser_init.c" 1
-# 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/vts2.h" 1
-
-
-
- 
-# 97 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/vts2.h"
-
-
-
-
-
-
-
-typedef int PVCI;
-typedef int VTCERR;
-
- 
- 
- 
-
- 
-extern PVCI    vtc_connect(char *servername, int portnum, int options);
-extern VTCERR  vtc_disconnect(int pvci);
-extern VTCERR  vtc_get_last_error(int pvci);
-
- 
-extern VTCERR  vtc_query_column(int pvci, char *columnName, int columnIndex, char **outvalue);
-extern VTCERR  vtc_query_row(int pvci, int columnIndex, char ***outcolumns, char ***outvalues);
-extern VTCERR  vtc_send_message(int pvci, char *column, char *message, unsigned short *outRc);
-extern VTCERR  vtc_send_if_unique(int pvci, char *column, char *message, unsigned short *outRc);
-extern VTCERR  vtc_send_row1(int pvci, char *columnNames, char *messages, char *delimiter,  unsigned char sendflag, unsigned short *outUpdates);
-extern VTCERR  vtc_update_message(int pvci, char *column, int index , char *message, unsigned short *outRc);
-extern VTCERR  vtc_update_row1(int pvci, char *columnNames, int index , char *messages, char *delimiter, unsigned short *outUpdates);
-extern VTCERR  vtc_retrieve_message(int pvci, char *column, char **outvalue);
-extern VTCERR  vtc_retrieve_messages1(int pvci, char *columnNames, char *delimiter, char ***outvalues);
-extern VTCERR  vtc_retrieve_row(int pvci, char ***outcolumns, char ***outvalues);
-extern VTCERR  vtc_increment(int pvci, char *column, int index , int incrValue, int *outValue);
-extern VTCERR  vtc_clear_message(int pvci, char *column, int index , unsigned short *outRc);
-extern VTCERR  vtc_clear_column(int pvci, char *column, unsigned short *outRc);
-extern VTCERR  vtc_clear_row(int pvci, int rowIndex, unsigned short *outRc);
-
-extern VTCERR  vtc_create_column(int pvci, char *column,unsigned short *outRc);
-extern VTCERR  vtc_column_size(int pvci, char *column, int *size);
-
-extern VTCERR  vtc_noop(int pvci);
-
- 
-extern void vtc_free(char *msg);
-extern void vtc_free_list(char **msglist);
-
- 
-
-
- 
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
- 
- 
- 
-
-extern PVCI    lrvtc_connect(char *servername, int portnum, int options);
-extern VTCERR  lrvtc_disconnect();
-extern VTCERR  lrvtc_query_column(char *columnName, int columnIndex);
-extern VTCERR  lrvtc_query_row(int columnIndex);
-extern VTCERR  lrvtc_send_message(char *columnName, char *message);
-extern VTCERR  lrvtc_send_if_unique(char *columnName, char *message);
-extern VTCERR  lrvtc_send_row1(char *columnNames, char *messages, char *delimiter,  unsigned char sendflag);
-extern VTCERR  lrvtc_update_message(char *columnName, int index , char *message);
-extern VTCERR  lrvtc_update_row1(char *columnNames, int index , char *messages, char *delimiter);
-extern VTCERR  lrvtc_retrieve_message(char *columnName);
-extern VTCERR  lrvtc_retrieve_messages1(char *columnNames, char *delimiter);
-extern VTCERR  lrvtc_retrieve_row();
-extern int     lrvtc_increment(char *columnName, int index , int incrValue);
-extern VTCERR  lrvtc_clear_message(char *columnName, int index);
-extern VTCERR  lrvtc_clear_column(char *columnName) ;
-extern VTCERR  lrvtc_clear_row(int rowIndex);
-extern VTCERR  lrvtc_create_column(char *columnName);
-extern int     lrvtc_column_size(char *columnName);
-
-extern VTCERR  lrvtc_noop();
-
- 
- 
- 
-
-                               
-
-
- 
- 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# 1 "vuser_init.c" 2
-
 
 # 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/Ptt_MySQL.h" 1
 # 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/mysql.h" 1
@@ -3726,17 +3644,18 @@ int lr_mysql_disconnect(MYSQL *Mconn)
 	mysql_close(Mconn);
 	return 1;
 }
-# 3 "vuser_init.c" 2
+# 2 "vuser_init.c" 2
 
 
 vuser_init()
 {
-	ci_load_dll(ci_this_context,("libmysql.dll"));
-	
-	
-	
-	
-	
+	init();
+	 
+
+
+
+
+
 	 
 # 30 "vuser_init.c"
      
@@ -3748,6 +3667,138 @@ vuser_init()
 # 3 "c:\\users\\david.doering\\documents\\david's documents\\davidlogintest\\logintest\\\\combined_LoginTest.c" 2
 
 # 1 "Action.c" 1
+# 1 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/vts2.h" 1
+
+
+
+ 
+# 97 "C:\\Program Files (x86)\\HP\\LoadRunner\\include/vts2.h"
+
+
+
+
+
+
+
+typedef int PVCI;
+typedef int VTCERR;
+
+ 
+ 
+ 
+
+ 
+extern PVCI    vtc_connect(char *servername, int portnum, int options);
+extern VTCERR  vtc_disconnect(int pvci);
+extern VTCERR  vtc_get_last_error(int pvci);
+
+ 
+extern VTCERR  vtc_query_column(int pvci, char *columnName, int columnIndex, char **outvalue);
+extern VTCERR  vtc_query_row(int pvci, int columnIndex, char ***outcolumns, char ***outvalues);
+extern VTCERR  vtc_send_message(int pvci, char *column, char *message, unsigned short *outRc);
+extern VTCERR  vtc_send_if_unique(int pvci, char *column, char *message, unsigned short *outRc);
+extern VTCERR  vtc_send_row1(int pvci, char *columnNames, char *messages, char *delimiter,  unsigned char sendflag, unsigned short *outUpdates);
+extern VTCERR  vtc_update_message(int pvci, char *column, int index , char *message, unsigned short *outRc);
+extern VTCERR  vtc_update_row1(int pvci, char *columnNames, int index , char *messages, char *delimiter, unsigned short *outUpdates);
+extern VTCERR  vtc_retrieve_message(int pvci, char *column, char **outvalue);
+extern VTCERR  vtc_retrieve_messages1(int pvci, char *columnNames, char *delimiter, char ***outvalues);
+extern VTCERR  vtc_retrieve_row(int pvci, char ***outcolumns, char ***outvalues);
+extern VTCERR  vtc_increment(int pvci, char *column, int index , int incrValue, int *outValue);
+extern VTCERR  vtc_clear_message(int pvci, char *column, int index , unsigned short *outRc);
+extern VTCERR  vtc_clear_column(int pvci, char *column, unsigned short *outRc);
+extern VTCERR  vtc_clear_row(int pvci, int rowIndex, unsigned short *outRc);
+
+extern VTCERR  vtc_create_column(int pvci, char *column,unsigned short *outRc);
+extern VTCERR  vtc_column_size(int pvci, char *column, int *size);
+
+extern VTCERR  vtc_noop(int pvci);
+
+ 
+extern void vtc_free(char *msg);
+extern void vtc_free_list(char **msglist);
+
+ 
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+ 
+
+extern PVCI    lrvtc_connect(char *servername, int portnum, int options);
+extern VTCERR  lrvtc_disconnect();
+extern VTCERR  lrvtc_query_column(char *columnName, int columnIndex);
+extern VTCERR  lrvtc_query_row(int columnIndex);
+extern VTCERR  lrvtc_send_message(char *columnName, char *message);
+extern VTCERR  lrvtc_send_if_unique(char *columnName, char *message);
+extern VTCERR  lrvtc_send_row1(char *columnNames, char *messages, char *delimiter,  unsigned char sendflag);
+extern VTCERR  lrvtc_update_message(char *columnName, int index , char *message);
+extern VTCERR  lrvtc_update_row1(char *columnNames, int index , char *messages, char *delimiter);
+extern VTCERR  lrvtc_retrieve_message(char *columnName);
+extern VTCERR  lrvtc_retrieve_messages1(char *columnNames, char *delimiter);
+extern VTCERR  lrvtc_retrieve_row();
+extern int     lrvtc_increment(char *columnName, int index , int incrValue);
+extern VTCERR  lrvtc_clear_message(char *columnName, int index);
+extern VTCERR  lrvtc_clear_column(char *columnName) ;
+extern VTCERR  lrvtc_clear_row(int rowIndex);
+extern VTCERR  lrvtc_create_column(char *columnName);
+extern int     lrvtc_column_size(char *columnName);
+
+extern VTCERR  lrvtc_noop();
+
+ 
+ 
+ 
+
+                               
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 1 "Action.c" 2
 
 Action()
 {	 
@@ -3819,10 +3870,9 @@ Action()
 char sqQuery[512];
 MYSQL *Mconn;
 int MyRC;
-char* user;
-char* password;
+ 
 
-Login()
+int Login()
 {
 	Mconn = lr_mysql_connect("127.0.0.1", 
 							 "root", 
@@ -3830,35 +3880,29 @@ Login()
 							 "loadrunner_db",
 							 atoi("3306"));
 	 
-	sprintf(sqQuery,"SELECT user, password FROM loadrunner_db.parameters");
+	 
+	 
+	sprintf(sqQuery,"SELECT user, password, session, clientid FROM loadrunner_db.parameters");
 	lr_mysql_query(Mconn, sqQuery);
 	lr_save_string(row[0][0].cell, "user");
 	lr_save_string(row[1][0].cell, "password");
-	 
+	lr_save_string(row[2][0].cell, "session");
+	lr_save_string(row[3][0].cell, "clientid");
 	user = lr_eval_string("{user}");
 	password = lr_eval_string("{password}");
-
-
-	session = ClientLogin(url, user, password);
-	sprintf(sqQuery,"INSERT INTO loadrunner_db.parameters (session)"  "VALUES (\"%s\") WHERE user = \"%s\"", session, user);
-	lr_mysql_query(Mconn, sqQuery);
-	client = ClientCreate(url, session);
-	ClientRegister(url, session, client);
-
- 
-
-
-
-
-
-     
-	 
-	 
-
-
+	session = lr_eval_string("{session}");
+	clientid = lr_eval_string("{clientid}");
 
 	 
-	 
+	if(strlen(session) < 1 || strlen(clientid) < 1)
+	{
+		session = ClientLogin(url, user, password);
+		clientid = ClientCreate(url, session);
+		sprintf(sqQuery, "UPDATE loadrunner_db.parameters SET session=\"%s\", clientid=\"%s\" WHERE user = \"%s\";",session,clientid,user); 
+		lr_mysql_query(Mconn, sqQuery);	
+	}	
+	ClientRegister(url, session, clientid);
+
 	return 0;
 }
 # 5 "c:\\users\\david.doering\\documents\\david's documents\\davidlogintest\\logintest\\\\combined_LoginTest.c" 2
@@ -3872,8 +3916,10 @@ Sync()
 	str[0] = "AppInfo";
 	str[1] = "Employee";
 	str[2] = "TimeEntry";
+	str[3] = "Activity";
+	str[4] = "Mileage";
 	for (i = 0; i < 3; i ++) {
-		QueryAction(url, session, client, str[i]);
+		QueryAction(url, session, clientid, str[i]);
 	}
 	 
 	return 0;
@@ -3881,7 +3927,6 @@ Sync()
 # 6 "c:\\users\\david.doering\\documents\\david's documents\\davidlogintest\\logintest\\\\combined_LoginTest.c" 2
 
 # 1 "vuser_end.c" 1
-
 vuser_end()
 { 
 

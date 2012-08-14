@@ -3,14 +3,14 @@ Type=Multi
 AdditionalTypes=QTWeb
 ActiveTypes=QTWeb
 GenerateTypes=QTWeb
-RecordedProtocols=
+RecordedProtocols=QTWeb
 DefaultCfg=default.cfg
 AppName=
 BuildTarget=
 ParamRightBrace=}
 ParamLeftBrace={
 NewFunctionHeader=1
-LastActiveAction=Login
+LastActiveAction=globals.h
 CorrInfoReportDir=result1
 LastResultDir=result1
 DevelopTool=Vugen
@@ -23,36 +23,14 @@ RunType=cci
 LastModifyVer=11.0.0.0
 [TransactionsOrder]
 Order=""
+[ExtraFiles]
+globals.h=
 [Actions]
 vuser_init=vuser_init.c
 Action=Action.c
 Login=Login.c
 Sync=Sync.c
 vuser_end=vuser_end.c
-[ProtocolsVersion]
-QTWeb=11.0.0.0
-[RunLogicFiles]
-Default Profile=default.usp
-[StateManagement]
-1=1
-7=1
-8=0
-9=0
-10=0
-11=0
-12=0
-13=0
-17=0
-18=0
-20=1
-21=0
-CurrentState=20
-VuserStateHistory= 0 65536 65552
-LastReplayStatus=2
-LastReplayErrorID1=-26612
-LastReplayErrorMsg1=functions.h(34): Error -26612: HTTP Status-Code=500 (Internal Server Error) for "http://ec2-184-72-43-122.us-west-1.compute.amazonaws.com/application/clientlogin"  	[MsgId: MERR-26612]
-[ExtraFiles]
-globals.h=
 [Recorded Actions]
 vuser_init=0
 Action=0
@@ -66,13 +44,39 @@ Action=1
 Login=1
 Sync=1
 vuser_end=1
-functions.h=1
+functions.h=0
 [Modified Actions]
 vuser_init=1
 Action=1
 Login=1
 Sync=1
 vuser_end=1
-functions.h=1
+functions.h=0
+[Interpreters]
+vuser_init=cci
+Action=cci
+Login=cci
+Sync=cci
+vuser_end=cci
 [ManuallyExtraFiles]
 functions.h=
+[ProtocolsVersion]
+QTWeb=11.0.0.0
+[RunLogicFiles]
+Default Profile=default.usp
+[StateManagement]
+1=1
+7=1
+8=1
+9=0
+10=0
+11=0
+12=0
+13=0
+17=0
+18=0
+20=1
+21=0
+CurrentState=8
+VuserStateHistory= 0 65536 65552 1048576 1048577 1048592
+LastReplayStatus=1

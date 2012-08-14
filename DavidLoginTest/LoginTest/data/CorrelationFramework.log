@@ -1,0 +1,4 @@
+[8/14/2012 4:14:14 PM] (thread id = 1) Full Trace: CorrelationFramework has initialized log functionality successfully.
+[8/14/2012 4:14:14 PM] (thread id = 1) Full Trace: WebCorrelationScanner initialized
+[8/14/2012 4:14:14 PM] (thread id = 1) Full Trace: CorrelationFramework has initialized Snapshot Scanners successfully.
+[8/14/2012 4:14:14 PM] (thread id = 1) Full Trace: CorrelationFramework has initialized Post Filters Manager successfully.

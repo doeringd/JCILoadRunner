@@ -1,1 +1,2 @@
-"{"login":"CMALANS","password":"cmalans|en-us","remember_me":"1"}"
+"{"client_id":"dab500ae318b445abd77a688af2eb25d","device_pin":"win32_client","device_port":"100"
+"","device_type":"WINDOWS_DESKTOP"}"

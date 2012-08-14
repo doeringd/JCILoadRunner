@@ -1,45 +1,38 @@
 char sqQuery[512];
 MYSQL *Mconn;
 int MyRC;
-char* user;
-char* password;
+//dictionary[columnName, value] GetAll(TableName, Array columns)
 
-Login()
+int Login()
 {
 	Mconn = lr_mysql_connect(MYSQLSERVER, 
 							 MYSQLUSERNAME, 
 							 MYSQLPASSWORD, 
 							 MYSQLDB,
 							 atoi(MYSQLPORT));
+	//connect(Mconn);
 	// Create query to database to pull user and password
-	sprintf(sqQuery,"SELECT user, password FROM loadrunner_db.parameters");
+	//pullUser(Mconn, user, password, session, clientid);
+	sprintf(sqQuery,"SELECT user, password, session, clientid FROM loadrunner_db.parameters");
 	lr_mysql_query(Mconn, sqQuery);
 	lr_save_string(row[0][0].cell, "user");
 	lr_save_string(row[1][0].cell, "password");
-	//lr_save_string(row[2][0].cell, "user");	
+	lr_save_string(row[2][0].cell, "session");
+	lr_save_string(row[3][0].cell, "clientid");
 	user = lr_eval_string("{user}");
 	password = lr_eval_string("{password}");
+	session = lr_eval_string("{session}");
+	clientid = lr_eval_string("{clientid}");
 
+	// Set all parameters and send back to database if user not logged in
+	if(strlen(session) < 1 || strlen(clientid) < 1)
+	{
+		session = ClientLogin(url, user, password);
+		clientid = ClientCreate(url, session);
+		sprintf(sqQuery, "UPDATE loadrunner_db.parameters SET session=\"%s\", clientid=\"%s\" WHERE user = \"%s\";",session,clientid,user);//"INSERT INTO loadrunner_db.parameters (session) VALUES (\"%s\") WHERE user = \"%s\"", session, user);
+		lr_mysql_query(Mconn, sqQuery);	
+	}	
+	ClientRegister(url, session, clientid);
 
-	session = ClientLogin(url, user, password);
-	sprintf(sqQuery,"INSERT INTO loadrunner_db.parameters (session)"  "VALUES (\"%s\") WHERE user = \"%s\"", session, user);
-	lr_mysql_query(Mconn, sqQuery);
-	client = ClientCreate(url, session);
-	ClientRegister(url, session, client);
-
-/*
-	lr_save_string(user, "user");
-	lr_save_string(password, "password");
-	lr_save_string(session, "session");
-	lr_save_string(client, "client");*/
-
-    //lrvtc_send_row1("user;password;session;client", user\;password\;session\;client, ";", VTSEND_SAME_ROW);
-	//lrvtc_send_row1("user;password;session;client", "{user};{password};{session};{client}", ";", VTSEND_SAME_ROW );
-	/*lrvtc_send_row1("user", user, user, VTSEND_SAME_ROW);
-	lrvtc_send_row1("password", password, password, VTSEND_SAME_ROW);
-	lrvtc_send_row1("session", session, session, VTSEND_SAME_ROW);
-	lrvtc_send_row1("client", client, client, VTSEND_SAME_ROW);*/
-	//lrvtc_send_message("user;password;session;client", "{user};{password};{session};{client}");
-	//lrvtc_send_message("user", user);
 	return 0;
 }
